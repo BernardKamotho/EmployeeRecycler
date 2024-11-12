@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/labimage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/screen1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/labimage"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lancet Pathologists"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:id="@+id/username"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lancet@gmail.com"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/ralewaysemibold"
+                android:textColor="@color/black"
+                android:layout_marginTop="6dp"
+                android:id="@+id/others"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permit ID: 457878"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:fontFamily="@font/ralewaysemibold"
+                android:textColor="#787474"
+                android:layout_marginTop="6dp"
+                android:id="@+id/salary"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lancet@gmail.com"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/ralewaysemibold"
+                android:textColor="#FF5722"
+                android:layout_marginTop="6dp"
+                android:id="@+id/department"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
