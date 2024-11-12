@@ -29,23 +29,23 @@ class EmployeeAdapter(var context: Context):
     }
 
     override fun onBindViewHolder(holder: EmployeeAdapter.ViewHolder, position: Int) {
-         //Find your 3 text views
+         //Find your 4 text views
         val username = holder.itemView.findViewById<MaterialTextView>(R.id.username)
         val others = holder.itemView.findViewById<MaterialTextView>(R.id.others)
         val salary = holder.itemView.findViewById<MaterialTextView>(R.id.salary)
         val department = holder.itemView.findViewById<MaterialTextView>(R.id.department)
-        //Assume one Lab
+        //Assume one Employee
          val employee = itemList[position]
-         username.text = employee.username
-        others.text = employee.others
+         username.text = "First Name: "+ employee.username
+        others.text = "Last Name: "+employee.others
         salary.text = "Kes: "+employee.salary
-        department.text = employee.department
+        department.text = "Department: "+employee.department
         //When one Lab is clicked, Move to Lab tests Activity
          holder.itemView.setOnClickListener {
              //carry the Lab_id of what you clicked.
              //carry it with Bundles, Preferences
              val id = employee.id_number
-             //pass this ID along with intent, I prefer shared preferecne
+             //pass this ID along with intent, I prefer shared preferences
              //Save id to prefs
 //             val i = Intent(context, LabTestsActivity::class.java)
 //             i.putExtra("key1", id)
