@@ -8,10 +8,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Get2">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/single_employee"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/single_employee"/>
+
+    </ScrollView>
 </LinearLayout>
