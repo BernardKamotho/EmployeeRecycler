@@ -7,15 +7,45 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewEmployees">
+    tools:context=".ViewEmployees"
+    android:background="#FBE7E7">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to View all Employees page"
-        android:textSize="20sp"
+        android:text="Employee Data"
+        android:textSize="28sp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        android:background="@drawable/shape2"
+        android:padding="30dp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardElevation="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text=""
+                android:layout_margin="5dp"
+                android:padding="3dp"
+                android:id="@+id/empdata"/>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
 
 </LinearLayout>

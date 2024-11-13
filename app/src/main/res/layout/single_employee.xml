@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:text="lancet@gmail.com"
                 android:textStyle="bold"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:fontFamily="@font/ralewaysemibold"
                 android:textColor="@color/black"
                 android:layout_marginTop="6dp"
@@ -51,10 +51,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Permit ID: 457878"
-                android:textStyle="normal"
-                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textSize="15sp"
                 android:fontFamily="@font/ralewaysemibold"
-                android:textColor="#787474"
+                android:textColor="@color/black"
                 android:layout_marginTop="6dp"
                 android:id="@+id/salary"/>
 

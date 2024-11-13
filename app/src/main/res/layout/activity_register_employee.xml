@@ -7,15 +7,78 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF9F2"
     tools:context=".RegisterEmployee">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to Registration page"
-        android:textSize="20sp"
+        android:text="Register New Employee"
+        android:textSize="25sp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        android:background="@drawable/shape2"
+        android:padding="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ID Number"
+        android:textColorHint="#000E9F"
+        android:layout_margin="20dp"
+        android:textColor="#0D0000"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:id="@+id/id_number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter User Name"
+        android:textColorHint="#000E9F"
+        android:layout_margin="20dp"
+        android:textColor="#0D0000"
+        android:textSize="20sp"
+        android:id="@+id/username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Other Names"
+        android:textColorHint="#000E9F"
+        android:layout_margin="20dp"
+        android:textColor="#0D0000"
+        android:textSize="20sp"
+        android:id="@+id/others"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Salary"
+        android:inputType="number"
+        android:textColorHint="#000E9F"
+        android:layout_margin="20dp"
+        android:textColor="#0D0000"
+        android:textSize="20sp"
+        android:id="@+id/salary"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Department"
+        android:textColorHint="#000E9F"
+        android:layout_margin="20dp"
+        android:textColor="#0D0000"
+        android:textSize="20sp"
+        android:id="@+id/department"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save/Register Employee"
+        android:layout_margin="20dp"
+        android:textColor="#F5FFFE"
+        android:backgroundTint="#0360BE"
+        android:id="@+id/saveBtn"/>
 </LinearLayout>
