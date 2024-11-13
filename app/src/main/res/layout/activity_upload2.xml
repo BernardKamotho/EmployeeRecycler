@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload2">
+
+    <!-- Product Name Input -->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <!-- Product Cost Input -->
+    <EditText
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Cost"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <!-- Product Description Input -->
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Description"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:padding="10dp" />
+
+    <!-- Image View for displaying selected or captured image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/upload"
+        android:contentDescription="Product Image"
+        android:scaleType="centerCrop"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Button to Post Image to API -->
+    <Button
+        android:id="@+id/btnImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Product"
+        android:padding="10dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Progress Bar for Uploading Status -->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+</LinearLayout>

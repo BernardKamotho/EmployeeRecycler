@@ -47,6 +47,12 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("com.loopj.android:android-async-http:1.4.9")
     implementation ("com.google.code.gson:gson:2.8.7")
+    implementation ("io.coil-kt:coil:1.1.1")
+    implementation ("com.karumi:dexter:6.2.2")
+    implementation ("com.squareup.picasso:picasso:2.8")
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+
 
 
 }

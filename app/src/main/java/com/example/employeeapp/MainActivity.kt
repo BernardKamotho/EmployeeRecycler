@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val updateBtn = findViewById<Button>(R.id.UpdateEmployee)
         val deleteBtn = findViewById<Button>(R.id.DeleteEmployee)
         val get2btn = findViewById<Button>(R.id.get2btn)
+        val upload2 = findViewById<Button>(R.id.upload2)
 
         //create explicit intent to the different pages
         registerBtn.setOnClickListener {
@@ -61,6 +62,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Deletepage)
 
             Toast.makeText(applicationContext, "Loading Get Page...", Toast.LENGTH_SHORT).show()
+        } //end listener
+
+        upload2.setOnClickListener {
+            val Deletepage = Intent(applicationContext, Upload2::class.java)
+            startActivity(Deletepage)
+
+            Toast.makeText(applicationContext, "Loading Upload Page...", Toast.LENGTH_SHORT).show()
         } //end listener
 
 

@@ -85,6 +85,19 @@
         android:backgroundTint="#010333"
         android:id="@+id/get2btn"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Upload with image"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#09AFC5"
+        android:backgroundTint="#010333"
+        android:id="@+id/upload2"/>
+
 
 
 
