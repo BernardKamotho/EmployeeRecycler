@@ -5,17 +5,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:orientation="vertical"
+    android:background="@drawable/screen1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DeleteEmployee">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to Delete Employee page"
-        android:textSize="20sp"
+        android:text="Delete An Employee"
+        android:textSize="25sp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        android:background="@drawable/shape2"
+        android:padding="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee's ID Number here"
+        android:textColorHint="#92009F"
+        android:layout_margin="20dp"
+        android:textColor="#0D0000"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:id="@+id/id_number"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Employee"
+        android:layout_margin="20dp"
+        android:textColor="#F5FFFE"
+        android:backgroundTint="#0360BE"
+        android:id="@+id/deleteBtn"/>
+
 
 </LinearLayout>
